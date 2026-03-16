@@ -1,0 +1,49 @@
+/* ═══════════════════════════════════════
+   TOKENS
+═══════════════════════════════════════ */
+:root {
+  --ember:    #B84A1A;
+  --fire:     #D4601E;
+  --gold:     #C8962A;
+  --gold-lt:  #E8BC5A;
+  --parch:    #F2E8D5;
+  --warm:     #EAD9BC;
+  --ink:      #1C1410;
+  --deep:     #2A1E14;
+  --forest:   #1E3028;
+  --stone:    #6A5A48;
+  --mist:     #8A7A68;
+  --chalk:    #FAF5EC;
+}
+/* ═══════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════ */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  font-family:'Mulish',sans-serif;
+  background:var(--chalk);
+  color:var(--ink);
+  overflow-x:hidden;
+  cursor:none;
+}
+
+/* ═══════════════════════════════════════
+   CUSTOM CURSOR
+═══════════════════════════════════════ */
+.cursor{
+  position:fixed;width:10px;height:10px;
+  background:var(--ember);border-radius:50%;
+  pointer-events:none;z-index:9999;
+  transform:translate(-50%,-50%);
+  transition:transform .1s,width .3s,height .3s,background .3s;
+  mix-blend-mode:multiply;
+}
+.cursor-ring{
+  position:fixed;width:36px;height:36px;
+  border:1px solid rgba(184,74,26,.4);border-radius:50%;
+  pointer-events:none;z-index:9998;
+  transform:translate(-50%,-50%);
+  transition:transform .12s ease,width .3s,height .3s;
+}
+body:hover .cursor{opacity:1}
