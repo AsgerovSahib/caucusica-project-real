@@ -7,6 +7,7 @@
   display:flex;align-items:center;justify-content:center;
   overflow:hidden;
   background:var(--ink);
+  font-family: "Cinzel", serif !important;
 }
 .hero-bg{
   position:absolute;inset:0;
@@ -38,7 +39,7 @@
 }
 .flame-1{
   width:80px;height:200px;
-  background:linear-gradient(to top, #ffffff 0%, #FFD060 15%, #FF8C20 40%, #C84010 70%, transparent 100%);
+  background:linear-gradient(to top, #fff 0%, #FFD060 15%, #FF8C20 40%, #C84010 70%, transparent 100%);
   animation:flicker1 2.4s ease-in-out infinite;
   left:50%;margin-left:-40px;
 }
@@ -126,7 +127,7 @@
   opacity:0;transform:translateY(30px);
 }
 .hero-title-sub{
-  font-family:'EB Garamond',serif;
+  font-family:'EB Garamond',serif !important;
   font-size:clamp(1rem,2.5vw,1.6rem);
   font-style:italic;
   color:rgba(255,255,255,.4);

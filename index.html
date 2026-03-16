@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAUCASICA.earth</title>
+    <title>CAUCASICA.EARTH</title>
     <link rel="stylesheet" href="./basic.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./wp.css" />
     <link rel="stylesheet" href="./hero.css" />
+    <link rel="stylesheet" href="./ai.css" />
   </head>
   <body>
     <!-- ═══════════ cursor ═══════════ -->
@@ -33,7 +34,7 @@
     </div>
     <!-- ═══════════ NAV ═══════════ -->
     <nav id="nav">
-      <a href="#" class="nav-brand">CAUCASICA<span>.earth</span></a>
+      <a href="#" class="nav-brand">CAUCASICA<span>.EARTH</span></a>
       <ul class="nav-links">
         <li><a href="#manifesto">Our Story</a></li>
         <li><a href="#planner">AI Planner</a></li>
@@ -74,6 +75,173 @@
         Scroll
       </div>
     </section>
+
+    <!-- ═══════════ MANIFESTO ═══════════ -->
+    <section id="manifesto">
+      <div class="manifesto-inner">
+        <p class="manifesto-kicker">The Caucasica Manifesto</p>
+        <p class="manifesto-text">
+          The world's oldest living crossroads —<br />
+          <em
+            >told for the first time by the people who actually live there.</em
+          >
+        </p>
+        <div class="manifesto-rule"></div>
+        <p class="manifesto-sub">
+          Azerbaijan has been a meeting point of civilisations for over three
+          thousand years. Zoroastrian fire temples, Silk Road caravanserais,
+          medieval khanates, Soviet modernity, and a renaissance of national
+          identity — all layered in a country smaller than most European
+          nations. Caucasica.earth exists to share this depth with the world,
+          through the voices of the communities that carry it.
+        </p>
+        <div
+          style="margin-top: 44px; display: flex; gap: 16px; flex-wrap: wrap"
+        >
+          <a
+            href="#fire"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 10px;
+              background: var(--ember);
+              color: #fff;
+              padding: 14px 32px;
+              font-size: 0.72rem;
+              letter-spacing: 2.5px;
+              text-transform: uppercase;
+              font-family: &quot;Mulish&quot;, sans-serif;
+              font-weight: 500;
+              text-decoration: none;
+              transition: background 0.3s;
+            "
+            onmouseover="this.style.background = 'var(--deep)'"
+            onmouseout="this.style.background = 'var(--ember)'"
+            >Discover the Story →</a
+          >
+          <a
+            href="#regions"
+            style="
+              display: inline-flex;
+              align-items: center;
+              gap: 10px;
+              background: transparent;
+              color: var(--ember);
+              border: 1px solid rgba(184, 74, 26, 0.3);
+              padding: 14px 32px;
+              font-size: 0.72rem;
+              letter-spacing: 2.5px;
+              text-transform: uppercase;
+              font-family: &quot;Mulish&quot;, sans-serif;
+              font-weight: 500;
+              text-decoration: none;
+              transition: all 0.3s;
+            "
+            >Explore 8 Regions</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ AI TRIP PLANNER ═══════════ -->
+    <section id="planner">
+      <div class="planner-inner">
+        <div class="planner-header">
+          <p class="label">AI Journey Architect</p>
+          <h2>Tell Us Who You Are.<br />We'll Build Your Azerbaijan.</h2>
+          <p>
+            Write one sentence — or twenty. Describe what moves you, what you're
+            curious about, who you're travelling with. Our AI will craft a
+            personalised journey across Azerbaijan's eight regions, matched to
+            hosts who carry the stories you're looking for.
+          </p>
+        </div>
+
+        <!-- Input -->
+        <div id="plannerInputArea">
+          <div class="planner-input-wrap">
+            <textarea
+              class="planner-textarea"
+              id="plannerInput"
+              placeholder="e.g. I'm a solo traveller fascinated by ancient history and craftsmanship. I want to eat home-cooked food, meet elderly artisans, and understand how Azerbaijan's fire culture shaped the region. I have 10 days and prefer slow travel over sightseeing…"
+            ></textarea>
+          </div>
+          <div class="planner-prompts">
+            <button class="pp" onclick="setPrompt('history')">
+              🏛 Ancient History
+            </button>
+            <button class="pp" onclick="setPrompt('craft')">
+              🪡 Craft & Artisans
+            </button>
+            <button class="pp" onclick="setPrompt('food')">
+              🍽 Food & Cuisine
+            </button>
+            <button class="pp" onclick="setPrompt('nature')">
+              🏔 Mountain & Nature
+            </button>
+            <button class="pp" onclick="setPrompt('family')">
+              👨‍👩‍👧 Family Trip
+            </button>
+            <button class="pp" onclick="setPrompt('photo')">
+              📷 Photography
+            </button>
+            <button class="pp" onclick="setPrompt('silk')">
+              🛤 Full Silk Road
+            </button>
+          </div>
+          <div class="planner-actions">
+            <button class="btn-plan" id="planBtn" onclick="generatePlan()">
+              ✦ Craft My Journey
+            </button>
+            <span class="planner-hint"
+              >Powered by AI · Results in ~15 seconds · Free to generate</span
+            >
+          </div>
+        </div>
+
+        <!-- Loading -->
+        <div class="planner-loading" id="plannerLoading">
+          <div class="loading-flames">
+            <div class="lf"></div>
+            <div class="lf"></div>
+            <div class="lf"></div>
+            <div class="lf"></div>
+            <div class="lf"></div>
+          </div>
+          <div class="loading-text" id="loadingText">
+            Reading your travel soul…
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div class="planner-result" id="plannerResult">
+          <div class="result-header">
+            <div class="rh-title" id="resTripTitle">Your Caucasica Journey</div>
+            <div class="rh-duration" id="resDuration">7 Days · 3 Regions</div>
+          </div>
+          <div class="result-regions" id="resRegions"><!-- JS filled --></div>
+          <div class="result-highlights" id="resHighlights">
+            <!-- JS filled -->
+          </div>
+          <div class="result-signature" id="resSignature">
+            <!-- JS filled -->
+          </div>
+          <div class="result-cta">
+            <a href="#inquiry" class="btn-send" id="resSendBtn"
+              >Send This to Our Baku Team →</a
+            >
+            <button class="btn-reset" onclick="resetPlanner()">
+              ← Plan a Different Journey
+            </button>
+            <span class="result-note"
+              >Your itinerary will be pre-filled into the inquiry form
+              below</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
   <script src="basic.js"></script>
+  <script src="ai.js"></script>
 </html>
