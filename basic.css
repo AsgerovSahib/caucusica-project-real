@@ -47,3 +47,42 @@ body{
   transition:transform .12s ease,width .3s,height .3s;
 }
 body:hover .cursor{opacity:1}
+
+
+/* ═══════════════════════════════════════
+   UTILS
+═══════════════════════════════════════ */
+.label-block{
+  font-size:.66rem;letter-spacing:4px;text-transform:uppercase;
+  margin-bottom:12px;font-family:'Mulish',sans-serif;
+}
+
+@media(max-width:1024px){
+  nav{padding:18px 28px}
+  nav.scrolled{padding:12px 28px}
+  .nav-links{display:none}
+  section,#manifesto,#hosts,#crafts,#impact,#inquiry,#academy,#tech-diplomacy,#fee-model,#scaling,#toolkit,#planner,#testimonials,footer{padding-left:28px;padding-right:28px}
+  .pillar{padding:40px 28px}
+  .promo-grid,.fire-inner,.pillars-grid{grid-template-columns:1fr}
+  .hosts-grid,.crafts-grid{grid-template-columns:1fr 1fr}
+  .impact-inner,.inquiry-grid,.academy-grid,.toolkit-inner{grid-template-columns:1fr;gap:50px}
+  .footer-top{grid-template-columns:1fr 1fr;gap:40px}
+  .regions-header,.hosts-head,.crafts-top{flex-direction:column;gap:16px;padding-left:28px;padding-right:28px}
+  .regions-scroll{padding:0 28px}
+  .pillars-header,.td-top,.fee-top,.scaling-top{flex-direction:column;gap:20px;padding:50px 28px 40px}
+  .td-cards{grid-template-columns:1fr}
+  .fee-layout{grid-template-columns:1fr}
+  .fee-hero{flex-direction:column;gap:24px}
+  .fee-breakdown{grid-template-columns:1fr}
+  .td-banner{flex-direction:column;gap:24px;text-align:center}
+  .weeks-grid{grid-template-columns:1fr}
+  .test-grid{grid-template-columns:1fr 1fr}
+  .test-featured{grid-template-columns:1fr;gap:28px}
+  .tf-person{text-align:left}
+  .tf-stars{justify-content:flex-start}
+  .trust-bar{gap:24px}
+  .trust-sep{display:none}
+  .result-highlights{grid-template-columns:1fr}
+  .rr-card{grid-template-columns:1fr;gap:8px}
+  .rr-meal{text-align:left}
+}
