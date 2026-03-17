@@ -290,3 +290,126 @@ nav.scrolled {
   font-family:'Mulish',sans-serif;
 }
 .ff-text{font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.7}
+
+/* ═══════════════════════════════════════
+   HOST VOICES
+═══════════════════════════════════════ */
+#hosts{
+  background:var(--chalk);
+  padding:100px 80px;
+}
+.hosts-head{
+  display:flex;justify-content:space-between;align-items:flex-end;
+  margin-bottom:60px;
+}
+.hosts-head .label{
+  font-size:.66rem;letter-spacing:4px;text-transform:uppercase;
+  color:var(--ember);margin-bottom:12px;
+  font-family:'Mulish',sans-serif;
+}
+.hosts-head h2{
+  font-family:'Cinzel',serif;
+  font-size:clamp(1.8rem,4vw,3rem);
+  color:var(--ink);font-weight:400;letter-spacing:2px;
+}
+.hosts-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:2px;
+}
+.host-card{
+  background:var(--warm);
+  padding:44px 36px;
+  position:relative;overflow:hidden;
+  transition:background .3s;border:1px solid rgba(184,74,26,.08);
+}
+.host-card:hover{background:#fff}
+.host-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(to right,var(--ember),var(--gold));
+  transform:scaleX(0);transform-origin:left;transition:transform .4s;
+}
+.host-card:hover::before{transform:scaleX(1)}
+.host-avatar{
+  width:56px;height:56px;border-radius:50%;
+  background:linear-gradient(135deg,var(--ember),var(--gold));
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cinzel',serif;font-size:1.1rem;color:#fff;
+  margin-bottom:24px;font-weight:600;
+}
+.host-quote{
+  font-family:'EB Garamond',serif;
+  font-size:1.05rem;font-style:italic;
+  color:var(--deep);line-height:1.7;
+  margin-bottom:24px;
+}
+.host-name{
+  font-family:'Cinzel',serif;font-size:.8rem;
+  letter-spacing:2px;color:var(--ink);font-weight:500;
+  text-transform:uppercase;
+}
+.host-role{
+  font-size:.72rem;color:var(--mist);
+  margin-top:4px;font-family:'Mulish',sans-serif;
+}
+.host-loc{
+  font-size:.72rem;color:var(--ember);
+  margin-top:4px;font-family:'Mulish',sans-serif;letter-spacing:1px;
+}
+
+
+/* ═══════════════════════════════════════
+   CRAFT LINEAGES
+═══════════════════════════════════════ */
+#crafts{
+  background:var(--deep);color:#fff;
+  padding:100px 80px;
+}
+.crafts-top{
+  display:flex;justify-content:space-between;
+  align-items:flex-end;margin-bottom:60px;
+}
+.crafts-top .label{
+  font-size:.66rem;letter-spacing:4px;text-transform:uppercase;
+  color:var(--gold-lt);opacity:.6;margin-bottom:12px;
+  font-family:'Mulish',sans-serif;
+}
+.crafts-top h2{
+  font-family:'Cinzel',serif !important;
+  text-transform: uppercase;
+  font-size:clamp(1.8rem,4vw,3rem);
+  color:#fff;font-weight:400;letter-spacing:2px;
+}
+.crafts-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:2px;
+}
+.craft-item{
+  padding:40px 32px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.05);
+  position:relative;overflow:hidden;
+  transition:background .3s;cursor:none;
+}
+.craft-item:hover{background:rgba(255,255,255,.07)}
+.craft-glyph{
+  font-size:2.5rem;margin-bottom:20px;
+  display:block;opacity:.8;
+}
+.craft-name{
+  font-family:'Cinzel',serif;font-size:.9rem;
+  letter-spacing:2px;color:#fff;font-weight:500;
+  text-transform:uppercase;margin-bottom:10px;
+}
+.craft-age{
+  font-family:'EB Garamond',serif;font-style:italic;
+  font-size:1.1rem;color:var(--gold-lt);margin-bottom:12px;
+}
+.craft-desc{
+  font-size:.8rem;line-height:1.8;
+  color:rgba(255,255,255,.4);font-weight:300;
+}
+.craft-tag{
+  display:inline-block;margin-top:16px;
+  font-size:.62rem;letter-spacing:2px;text-transform:uppercase;
+  background:rgba(200,150,42,.12);border:1px solid rgba(200,150,42,.2);
+  color:var(--gold);padding:4px 10px;font-family:'Mulish',sans-serif;
+} 
