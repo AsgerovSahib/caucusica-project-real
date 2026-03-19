@@ -494,3 +494,760 @@
     font-size: 1.7rem !important;
   }
 }
+
+
+/* ═══════════════════════════════════════
+   CRAFT LINEAGES MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  #crafts {
+    padding: 60px 20px !important;
+  }
+
+  /* Başlıq hissəsini tənzimləyirik */
+  .crafts-top {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 20px;
+    margin-bottom: 40px !important;
+  }
+
+  /* HTML daxilindəki sağa meyilli mətni sola çəkirik */
+  .crafts-top p[style*="text-align: right"] {
+    text-align: left !important;
+    max-width: 100% !important;
+    font-size: 0.95rem !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  /* 4 sütunlu grid-i tək sütuna keçiririk */
+  .crafts-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+
+  .craft-item {
+    padding: 35px 25px !important;
+    background: rgba(255, 255, 255, 0.05) !important; /* Bir az daha nəzərəçarpan fon */
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    cursor: default !important; /* Mobildə "cursor: none" olmamalıdır */
+  }
+
+  .craft-glyph {
+    font-size: 2rem !important;
+    margin-bottom: 15px !important;
+  }
+
+  .craft-name {
+    font-size: 1rem !important;
+    letter-spacing: 1.5px !important;
+  }
+
+  .craft-age {
+    font-size: 1.2rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  .craft-desc {
+    font-size: 0.85rem !important;
+    line-height: 1.7 !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .craft-tag {
+    margin-top: 20px !important;
+    font-size: 0.55rem !important;
+    padding: 6px 12px !important;
+  }
+}
+
+/* Kiçik mobil ekranlar üçün h2 ölçüsü */
+@media only screen and (max-width: 480px) {
+  .crafts-top h2 {
+    font-size: 1.7rem !important;
+  }
+}
+
+/* ═══════════════════════════════════════
+   HOST ACADEMY MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  #academy {
+    padding: 60px 20px !important;
+  }
+
+  .academy-grid {
+    grid-template-columns: 1fr !important; /* Sol və sağ hissəni alt-alta yığırıq */
+    gap: 50px !important;
+  }
+
+  .academy-left {
+    text-align: left;
+  }
+
+  .academy-left h2 {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .academy-left .rule {
+    width: 60px !important; /* Xətti bir az uzatdıq */
+  }
+
+  .academy-left p {
+    font-size: 0.95rem !important;
+    line-height: 1.8 !important;
+    margin-bottom: 30px !important;
+  }
+
+  /* Sertifikat nişanı (Badge) mobildə */
+  .badge-example {
+    display: flex !important; /* inline-flex-dən flex-ə */
+    width: 100%; /* Tam eni tutsun */
+    justify-content: flex-start;
+    padding: 18px !important;
+    gap: 15px !important;
+  }
+
+  .badge-text {
+    font-size: 0.65rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  /* Həftəlik proqram grid-i */
+  .weeks-grid {
+    grid-template-columns: 1fr !important; /* 2 sütunu tək sütuna salırıq */
+    gap: 10px !important;
+  }
+
+  .week-block {
+    padding: 25px 20px !important;
+    background: #fff !important; /* Mobildə daha təmiz görüntü üçün birbaşa ağ */
+    border-left: 3px solid rgba(184, 74, 26, 0.1) !important; /* Sabit sol xətt */
+  }
+
+  /* Hover effektini mobildə sabitləyirik */
+  .week-block::before {
+    transform: scaleY(1) !important;
+    opacity: 0.3;
+  }
+
+  .wb-weeks {
+    font-size: 0.7rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  .wb-title {
+    font-size: 0.95rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .wb-desc {
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* Kiçik mobil cihazlar üçün h2 ayarı */
+@media only screen and (max-width: 480px) {
+  .academy-left h2 {
+    font-size: 1.7rem !important;
+  }
+}
+
+/* ═══════════════════════════════════════
+   HOST ACADEMY MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  #academy {
+    padding: 60px 20px !important;
+  }
+
+  .academy-grid {
+    grid-template-columns: 1fr !important; /* Sol və sağ hissəni alt-alta yığırıq */
+    gap: 50px !important;
+  }
+
+  .academy-left {
+    text-align: left;
+  }
+
+  .academy-left h2 {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .academy-left .rule {
+    width: 60px !important; /* Xətti bir az uzatdıq */
+  }
+
+  .academy-left p {
+    font-size: 0.95rem !important;
+    line-height: 1.8 !important;
+    margin-bottom: 30px !important;
+  }
+
+  /* Sertifikat nişanı (Badge) mobildə */
+  .badge-example {
+    display: flex !important; /* inline-flex-dən flex-ə */
+    width: 100%; /* Tam eni tutsun */
+    justify-content: flex-start;
+    padding: 18px !important;
+    gap: 15px !important;
+  }
+
+  .badge-text {
+    font-size: 0.65rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  /* Həftəlik proqram grid-i */
+  .weeks-grid {
+    grid-template-columns: 1fr !important; /* 2 sütunu tək sütuna salırıq */
+    gap: 10px !important;
+  }
+
+  .week-block {
+    padding: 25px 20px !important;
+    background: #fff !important; /* Mobildə daha təmiz görüntü üçün birbaşa ağ */
+    border-left: 3px solid rgba(184, 74, 26, 0.1) !important; /* Sabit sol xətt */
+  }
+
+  /* Hover effektini mobildə sabitləyirik */
+  .week-block::before {
+    transform: scaleY(1) !important;
+    opacity: 0.3;
+  }
+
+  .wb-weeks {
+    font-size: 0.7rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  .wb-title {
+    font-size: 0.95rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .wb-desc {
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* Kiçik mobil cihazlar üçün h2 ayarı */
+@media only screen and (max-width: 480px) {
+  .academy-left h2 {
+    font-size: 1.7rem !important;
+  }
+}
+
+/* ═══════════════════════════════════════
+   TECH DIPLOMACY MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  #tech-diplomacy {
+    padding: 60px 20px !important;
+  }
+
+  /* Arxa fondakı dairələri mobildə kiçildirik və mövqeyini düzəldirik */
+  #tech-diplomacy::before {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right: -50px;
+    opacity: 0.3;
+  }
+
+  #tech-diplomacy::after {
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
+    left: -50px;
+    opacity: 0.2;
+  }
+
+  /* Başlıq hissəsi */
+  .td-top {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 20px;
+    margin-bottom: 40px !important;
+  }
+
+  .td-top h2 {
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .td-top p {
+    text-align: left !important;
+    max-width: 100% !important;
+    font-size: 0.95rem !important;
+    padding-left: 0 !important;
+  }
+
+  /* Kartlar grid-i */
+  .td-cards {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+
+  .td-card {
+    padding: 30px 25px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+  }
+
+  /* Roma rəqəmi kimi görünən o böyük nömrələr */
+  .td-num {
+    font-size: 2.8rem !important;
+    margin-bottom: 15px !important;
+    opacity: 0.15 !important;
+  }
+
+  .td-title {
+    font-size: 0.95rem !important;
+    letter-spacing: 1.5px !important;
+  }
+
+  .td-text {
+    font-size: 0.85rem !important;
+    line-height: 1.7 !important;
+  }
+
+  /* Alt Banner hissəsi */
+  .td-banner {
+    flex-direction: column; /* Yazı və rəqəm nişanını alt-alta qoyuruq */
+    text-align: center;
+    padding: 40px 25px !important;
+    gap: 30px !important;
+    margin-top: 30px !important;
+  }
+
+  .td-banner-text {
+    font-size: 1.1rem !important;
+    line-height: 1.5 !important;
+    max-width: 100% !important;
+  }
+
+  .td-banner-badge {
+    width: 100% !important; /* Mobildə tam eni tutsun */
+    padding: 20px !important;
+  }
+}
+
+/* Çox kiçik ekranlar üçün */
+@media only screen and (max-width: 480px) {
+  .td-top h2 {
+    font-size: 1.6rem !important;
+  }
+  
+  .td-banner-badge .big {
+    font-size: 1.2rem !important;
+  }
+}
+
+/* ═══════════════════════════════════════
+   CBT-AI TOOLKIT MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  #toolkit {
+    padding: 60px 20px !important;
+  }
+
+  /* Arxa fondakı nəhəng emojini mobildə kiçildirik və ya gizlədirik */
+  #toolkit::before {
+    font-size: 50vw !important;
+    right: -10vw !important;
+    opacity: 0.03 !important;
+  }
+
+  .toolkit-inner {
+    grid-template-columns: 1fr !important; /* Sol mətn və sağ form alt-alta */
+    gap: 50px !important;
+  }
+
+  .toolkit-left h2 {
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .toolkit-left p {
+    font-size: 0.95rem !important;
+    line-height: 1.7 !important;
+  }
+
+  /* Siyahı hissəsi (✦ olan sətirlər) */
+  .toolkit-includes {
+    gap: 15px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .ti-row {
+    font-size: 0.88rem !important; /* Mobildə bir az böyük ki, rahat oxunsun */
+    line-height: 1.5;
+    align-items: flex-start !important; /* Uzun sətirlər olanda ulduz yuxarıda qalsın */
+  }
+
+  /* Form hissəsi */
+  .toolkit-form {
+    padding: 40px 25px !important;
+    width: 100%;
+  }
+
+  .toolkit-form h3 {
+    font-size: 1.1rem !important;
+    text-align: center;
+  }
+
+  .toolkit-form p {
+    text-align: center;
+    font-size: 0.85rem !important;
+  }
+
+  /* Input və Select elementləri mobildə daha rahat toxunulmalıdır (min-height: 48px) */
+  .toolkit-form input, 
+  .toolkit-form select {
+    padding: 14px !important;
+    font-size: 1rem !important; /* iOS-da input-a klikləyəndə avtomatik zoom olmasın deyə 16px (1rem) idealdır */
+    margin-bottom: 15px !important;
+    border-radius: 0 !important; /* Dizayna uyğun iti künclər */
+  }
+
+  .btn-toolkit {
+    padding: 18px !important; /* Barmaqla rahat basmaq üçün */
+    font-size: 0.85rem !important;
+    cursor: pointer !important; /* Mobildə kursoru pointer edirik */
+  }
+
+  .toolkit-note {
+    font-size: 0.75rem !important;
+    line-height: 1.4;
+  }
+}
+
+/* Çox kiçik ekranlar üçün h2 ölçüsü */
+@media only screen and (max-width: 480px) {
+  .toolkit-left h2 {
+    font-size: 1.6rem !important;
+  }
+}
+
+/* ═══════════════════════════════════════
+   IMPACT SECTION MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  #impact {
+    padding: 60px 20px !important;
+  }
+
+  /* Fon dairələrini mobildə kiçildirik */
+  #impact::before {
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    right: -50px;
+  }
+
+  #impact::after {
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
+    left: -50px;
+  }
+
+  /* Əsas grid-i tək sütuna salırıq */
+  .impact-inner {
+    grid-template-columns: 1fr !important;
+    gap: 50px !important;
+  }
+
+  .impact-left h2 {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .impact-left p {
+    font-size: 0.95rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 30px !important;
+    color: rgba(255, 255, 255, 0.7) !important; /* Mobildə oxunaqlılıq üçün rəngi bir az açdıq */
+  }
+
+  /* İmpakt maddələri (Vədələr) */
+  .impact-promises {
+    gap: 15px !important;
+  }
+
+  .ip-item {
+    padding: 15px !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+  }
+
+  .ip-icon {
+    font-size: 1.1rem !important;
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  .ip-text h4 {
+    font-size: 0.85rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .ip-text p {
+    font-size: 0.8rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Statistika grid-i - Mobildə 2x2 saxlaya bilərik, ya da tək sütun. 
+     Amma 2x2 daha simmetrik görünür. */
+  .impact-stats {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important; /* Aradakı 2px-lik boşluğu bir az artırdıq */
+  }
+
+  .i-stat {
+    padding: 30px 15px !important;
+  }
+
+  .i-stat-num {
+    font-size: 2.2rem !important;
+  }
+
+  .i-stat-num span {
+    font-size: 1.5rem !important;
+  }
+
+  .i-stat-label {
+    font-size: 0.6rem !important;
+    letter-spacing: 1.5px !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* Çox kiçik ekranlar üçün h2 ayarı */
+@media only screen and (max-width: 480px) {
+  .impact-left h2 {
+    font-size: 1.7rem !important;
+  }
+  
+  /* Çox balaca ekranlarda statistikanı tək sütun edirik */
+  .impact-stats {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ═══════════════════════════════════════
+   TESTIMONIALS MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  #testimonials {
+    padding: 60px 20px !important;
+  }
+
+  /* Arxa fondakı dırnaq işarəsini mobildə kiçildirik */
+  #testimonials::before {
+    font-size: 60vw !important;
+    top: -5% !important;
+    left: -10vw !important;
+  }
+
+  .test-header {
+    margin-bottom: 40px !important;
+  }
+
+  /* Əsas Rəy (Featured) - Mobildə alt-alta düzülür */
+  .test-featured {
+    grid-template-columns: 1fr !important;
+    padding: 40px 25px !important;
+    gap: 30px !important;
+    text-align: center;
+  }
+
+  .tf-quote {
+    font-size: 1.15rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .tf-person {
+    text-align: center !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tf-stars {
+    justify-content: center !important;
+    margin-top: 5px;
+  }
+
+  /* Rəy Grid-i - Kartları alt-alta düzürük */
+  .test-grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+    margin-top: 15px;
+  }
+
+  .test-card {
+    padding: 30px 25px !important;
+  }
+
+  .test-quote {
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Etimad Paneli (Trust Bar) */
+  .trust-bar {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important; /* 2-2 düzülüş */
+    gap: 30px 10px !important;
+    margin-top: 40px !important;
+    padding: 40px 0 !important;
+  }
+
+  .trust-sep {
+    display: none !important; /* Mobildə ayırıcı xətləri gizlədirik, grid boşluğu kifayətdir */
+  }
+
+  .trust-num {
+    font-size: 1.5rem !important;
+  }
+
+  .trust-label {
+    font-size: 0.6rem !important;
+    letter-spacing: 1px !important;
+    max-width: 140px;
+  }
+
+  /* Sonuncu tək qalan elementi mərkəzləyirik (0 unresolved rəqəmi) */
+  .trust-item:last-child {
+    grid-column: span 2;
+    margin-top: 10px;
+  }
+}
+
+/* Çox kiçik ekranlar üçün font tənzimləməsi */
+@media only screen and (max-width: 480px) {
+  .tf-quote {
+    font-size: 1.05rem !important;
+  }
+  
+  .test-header h2 {
+    font-size: 1.7rem !important;
+  }
+}
+
+/* ═══════════════════════════════════════
+   INQUIRY SECTION MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  #inquiry {
+    padding: 60px 20px !important;
+  }
+
+  /* Fon dırnaq işarəsini mobildə tənzimləyirik */
+  #inquiry::before {
+    font-size: 60vw !important;
+    right: -10vw !important;
+    top: 5% !important;
+    opacity: 0.03 !important;
+  }
+
+  .inquiry-grid {
+    grid-template-columns: 1fr !important; /* Sol mətn və sağ form alt-alta */
+    gap: 50px !important;
+  }
+
+  .inq-left h2 {
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .inq-left p {
+    font-size: 0.95rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 30px !important;
+  }
+
+  /* Maddə-maddə vədlər hissəsi */
+  .inq-promises {
+    gap: 18px !important;
+    margin-bottom: 20px;
+  }
+
+  .inq-p {
+    font-size: 0.85rem !important;
+    line-height: 1.4 !important;
+    align-items: flex-start !important; /* Uzun sətirlərdə nöqtə yuxarıda qalsın */
+  }
+
+  .inq-p::before {
+    margin-top: 6px; /* Nöqtəni mətnlə eyni səviyyəyə gətiririk */
+  }
+
+  /* Form hissəsi */
+  .inq-form {
+    padding: 40px 25px !important;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(184, 74, 26, 0.1) !important;
+  }
+
+  /* Yan-yana olan inputları mobildə alt-alta salırıq */
+  .form-row-2 {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important; /* Aradakı boşluğu input-un öz margin-i təmin edəcək */
+  }
+
+  label {
+    font-size: 0.75rem !important; /* Mobildə daha oxunaqlı etiketlər */
+    margin-bottom: 10px !important;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 15px 14px !important; /* Barmaq üçün daha geniş toxunma sahəsi */
+    font-size: 1rem !important; /* iOS zoom probleminin qarşısını almaq üçün 16px */
+    margin-bottom: 25px !important; /* Elementlər arası nəfəs alma sahəsi */
+  }
+
+  textarea {
+    height: 120px !important; /* Mobildə yazı yazmaq üçün daha geniş sahə */
+  }
+
+  .btn-submit {
+    padding: 20px !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 2px !important;
+    cursor: pointer !important; /* Mobildə kursoru göstəririk */
+    margin-top: 10px;
+  }
+}
+
+/* Çox kiçik ekranlar (məsələn: iPhone SE) üçün əlavə kiçiltmə */
+@media only screen and (max-width: 480px) {
+  .inq-left h2 {
+    font-size: 1.6rem !important;
+  }
+  
+  .inq-form {
+    padding: 30px 15px !important;
+  }
+}
+
+
+
