@@ -71,15 +71,17 @@
 /* ═══════════════════════════════════════
    ƏLAVƏ: Cihaz çox kiçikdirsə (iPhone SE və s.)
 ═══════════════════════════════════════ */
-@media only screen and (max-width: 380px) {
+
+/* Çox kiçik ekranlarda ".EARTH" hissəsini gizlədirik ki, logo sığsın */
+/* @media only screen and (max-width: 380px) {
   .nav-brand span {
-    display: none; /* Çox kiçik ekranlarda ".EARTH" hissəsini gizlədirik ki, logo sığsın */
+    display: none; 
   }
   
   .nav-cta {
     font-size: 0.55rem !important;
   }
-}
+} */
 
 /* ═══════════════════════════════════════
    FEE MODEL MOBILE OPTIMIZATION
