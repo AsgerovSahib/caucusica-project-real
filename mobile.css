@@ -1,0 +1,496 @@
+/* ═══════════════════════════════════════
+   CAUCASICA.EARTH - MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  
+  /* 1. Naviqasiya Paneli */
+  nav {
+    padding: 12px 20px !important; /* Kənar boşluqları azaltdıq */
+    background: rgba(18, 13, 10, 0.98) !important; /* Daha tünd və oxunaqlı fon */
+    backdrop-filter: blur(15px);
+    justify-content: space-between;
+  }
+
+  /* Logonu bir az kiçildirik ki, yanındakı düyməyə yer qalsın */
+  .nav-brand {
+    font-size: 0.85rem !important;
+    letter-spacing: 2px !important;
+  }
+
+  /* Desktop menyusunu tamamilə gizlədirik */
+  .nav-links {
+    display: none !important; 
+  }
+
+  /* "Begin Journey" düyməsini mobilə uyğunlaşdırırıq */
+  .nav-cta {
+    padding: 6px 12px !important;
+    font-size: 0.6rem !important;
+    letter-spacing: 1px !important;
+    border-radius: 2px;
+  }
+
+  /* 2. WhatsApp Düyməsi (UX Təkmilləşdirməsi) */
+  .wa-float {
+    bottom: 15px !important;
+    right: 15px !important;
+    transform: scale(0.9); /* Mobildə bir az kiçik daha yaxşı görünür */
+  }
+
+  /* Mobildə "Chat on WhatsApp" yazısı çox yer tutur, onu gizlədib yalnız ikon saxlayırıq */
+  .wa-label {
+    display: none !important;
+  }
+
+  /* 3. Kursor Problemi */
+  /* Mobildə fiziki kursor olmadığı üçün bu elementlər toxunuş zamanı problem yarada bilər */
+  .cursor, 
+  .cursor-ring {
+    display: none !important;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  /* 4. Ümumi Kontent Uyğunluğu */
+  section {
+    padding: 60px 20px !important; /* Bölmələr arası boşluqları mobildə daraldırıq */
+  }
+
+  h1 {
+    font-size: 2rem !important; /* Başlıqları mobildə oxunaqlı ölçüyə salırıq */
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 0.9rem !important;
+    line-height: 1.6;
+  }
+}
+
+/* ═══════════════════════════════════════
+   ƏLAVƏ: Cihaz çox kiçikdirsə (iPhone SE və s.)
+═══════════════════════════════════════ */
+@media only screen and (max-width: 380px) {
+  .nav-brand span {
+    display: none; /* Çox kiçik ekranlarda ".EARTH" hissəsini gizlədirik ki, logo sığsın */
+  }
+  
+  .nav-cta {
+    font-size: 0.55rem !important;
+  }
+}
+
+/* ═══════════════════════════════════════
+   FEE MODEL MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  #fee-model {
+    padding: 60px 20px !important; /* Kənar boşluqları daraldırıq */
+  }
+
+  /* Başlıq hissəsini alt-alta yığırıq */
+  .fee-top {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .fee-top p {
+    text-align: left !important; /* Mobildə sağa meyilli mətn oxunuşu çətinləşdirir */
+    max-width: 100% !important;
+    font-size: 0.95rem;
+  }
+
+  /* 2 sütunlu kartları tək sütuna salırıq */
+  .fee-layout {
+    grid-template-columns: 1fr !important;
+    gap: 15px; /* Kartlar arasında nəfəs almaq üçün boşluq */
+  }
+
+  .fee-card {
+    padding: 40px 30px !important;
+  }
+
+  .fee-pct {
+    font-size: 3.5rem !important; /* Rəqəmləri bir az kiçildirik */
+  }
+
+  /* Narıncı Hero blokunu (80%) səliqəyə salırıq */
+  .fee-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 25px !important;
+    gap: 20px;
+  }
+
+  .fee-hero-num {
+    font-size: 3.5rem !important;
+  }
+
+  .fee-hero-text h3 {
+    font-size: 1rem !important;
+    line-height: 1.4;
+  }
+
+  /* Alt hissədəki 3 sütunlu breakdown-u tək sütuna salırıq */
+  .fee-breakdown {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .fb-item {
+    padding: 25px 20px !important;
+  }
+
+  .fb-pct {
+    font-size: 1.8rem !important;
+  }
+
+  .fb-label {
+    font-size: 0.6rem !important;
+    letter-spacing: 1.5px !important;
+  }
+}
+
+/* Kiçik mobil cihazlar üçün incə ayar */
+@media only screen and (max-width: 480px) {
+  .fee-top h2 {
+    font-size: 1.6rem !important;
+  }
+  
+  .fee-pct {
+    font-size: 3rem !important;
+  }
+}
+
+/* ═══════════════════════════════════════
+   FOOTER MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 60px 20px 30px !important; /* Kənar boşluqları azaltdıq */
+    text-align: center; /* Mobildə mərkəzləşdirilmiş dizayn daha premium görünür */
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr !important; /* Bütün sütunları alt-alta yığırıq */
+    gap: 40px !important;
+    margin-bottom: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  /* Brend və Tagline hissəsi */
+  .footer-brand {
+    font-size: 1rem !important;
+    justify-content: center;
+    display: flex;
+    gap: 5px;
+  }
+
+  .footer-tagline {
+    max-width: 100% !important; /* Mətni tam enə yayırıq */
+    margin: 0 auto 25px !important;
+    font-size: 0.9rem !important;
+    padding: 0 10px;
+  }
+
+  .footer-social {
+    justify-content: center; /* Sosial ikonları mərkəzə çəkirik */
+    margin-bottom: 10px;
+  }
+
+  /* Link sütunları */
+  .footer-col h4 {
+    margin-bottom: 15px !important;
+    font-size: 0.8rem !important;
+    color: var(--gold-lt); /* Mobildə başlıqları daha nəzərəçarpan etdik */
+  }
+
+  .footer-col a {
+    font-size: 0.85rem !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Footer alt hissəsi */
+  .footer-bottom {
+    flex-direction: column; /* Copy və Earth yazısını alt-alta qoyuruq */
+    gap: 20px;
+  }
+
+  .footer-copy {
+    order: 2; /* Müəllif hüquqları yazısını aşağı salırıq */
+    font-size: 0.65rem !important;
+    opacity: 0.5;
+  }
+
+  .footer-earth {
+    order: 1; /* Böyük "CAUCASICA · EARTH" yazısını yuxarı qaldırırıq */
+    font-size: 0.75rem !important;
+    letter-spacing: 5px !important;
+  }
+}
+
+/* Çox kiçik ekranlar üçün incə toxunuş */
+@media only screen and (max-width: 480px) {
+  .footer-top {
+    gap: 35px !important;
+  }
+  
+  .fsoc {
+    width: 40px; /* Mobildə klikləmək daha rahat olsun deyə ikonları bir az böyütdük */
+    height: 40px;
+  }
+}
+
+/* ═══════════════════════════════════════
+   THREE PILLARS MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  /* Header hissəsinin tənzimlənməsi */
+  .pillars-header {
+    padding: 60px 20px 40px !important;
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 20px;
+  }
+
+  .pillars-header-right {
+    text-align: left !important;
+    max-width: 100% !important;
+    padding-left: 0;
+    font-size: 0.95rem !important;
+  }
+
+  /* Grid-i tək sütuna keçiririk */
+  .pillars-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .pillar {
+    padding: 50px 25px 60px !important;
+    border-right: none !important; /* Sağdakı xətti silirik */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06); /* Aşağıya xətt əlavə edirik */
+  }
+
+  .pillar:last-child {
+    border-bottom: none;
+  }
+
+  /* Roma rəqəmlərinin (I, II, III) mobildəki mövqeyi */
+  .pillar-num {
+    font-size: 4rem !important;
+    margin-bottom: 20px !important;
+    position: absolute; /* Rəqəmi sağ yuxarı küncə çəkirik ki, yer tutmasın */
+    right: 20px;
+    top: 40px;
+    opacity: 0.4;
+  }
+
+  .pillar-title {
+    font-size: 0.9rem !important;
+    margin-bottom: 20px !important;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* "Hook line" hissəsi - Sitat kimi görünən yer */
+  .pillar-hook-line {
+    font-size: 1.1rem !important;
+    margin-bottom: 18px !important;
+    line-height: 1.4 !important;
+  }
+
+  .pillar-text {
+    font-size: 0.9rem !important;
+    line-height: 1.7 !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+
+  .pillar-cta {
+    margin-top: 30px !important;
+    padding: 10px 0; /* Mobildə klikləmək sahəsini böyüdürük */
+  }
+}
+
+/* Ekran çox kiçikdirsə (məs. 380px altı) */
+@media only screen and (max-width: 380px) {
+  .pillars-header-left h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  .pillar-num {
+    font-size: 3rem !important;
+  }
+}
+
+/* ═══════════════════════════════════════
+   FIRE PHILOSOPHY MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  #fire {
+    min-height: auto !important;
+    display: block !important; /* Flex-i ləğv edirik */
+  }
+
+  .fire-inner {
+    grid-template-columns: 1fr !important; /* Sütunları alt-alta yığırıq */
+  }
+
+  .fire-text {
+    padding: 60px 25px !important;
+    text-align: left;
+  }
+
+  .fire-text h2 {
+    font-size: 2.2rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 25px !important;
+  }
+
+  /* Sitat hissəsi mobildə daha yığcam */
+  .fire-quote {
+    margin: 30px 0 !important;
+    padding-left: 20px !important;
+  }
+
+  .fire-quote p {
+    font-size: 1.15rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .fire-body {
+    max-width: 100% !important;
+    font-size: 0.95rem !important;
+    line-height: 1.8 !important;
+  }
+
+  /* Sağ tərəfdəki vizual blokun mobildəki halı */
+  .fire-visual {
+    padding: 60px 25px !important;
+    background: linear-gradient(180deg, #1a0a04 0%, #3a1808 100%) !important;
+  }
+
+  /* Arxa fondakı böyük alov simvolu */
+  .fire-symbol {
+    font-size: 40vw !important; /* Mobildə daha böyük və atmosferik */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.08;
+  }
+
+  .fire-facts {
+    padding: 0 !important;
+    width: 100%;
+    gap: 40px !important;
+  }
+
+  .fire-fact {
+    padding-bottom: 25px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .ff-num {
+    font-size: 2rem !important;
+    margin-bottom: 5px;
+  }
+
+  .ff-label {
+    font-size: 0.65rem !important;
+    letter-spacing: 1.5px !important;
+  }
+
+  .ff-text {
+    font-size: 0.85rem !important;
+    line-height: 1.6 !important;
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+}
+
+/* Kiçik ekranlar üçün h2 ölçüsü */
+@media only screen and (max-width: 480px) {
+  .fire-text h2 {
+    font-size: 1.8rem !important;
+  }
+}
+
+ /* ═══════════════════════════════════════
+   HOST VOICES MOBILE OPTIMIZATION
+═══════════════════════════════════════ */
+
+@media only screen and (max-width: 768px) {
+  #hosts {
+    padding: 60px 20px !important;
+  }
+
+  /* Başlıq hissəsini mobilə uyğunlaşdırırıq */
+  .hosts-head {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 20px;
+    margin-bottom: 40px !important;
+  }
+
+  /* HTML daxilindəki inline stili (text-align: right) mobildə ləğv edirik */
+  .hosts-head p[style*="text-align: right"] {
+    text-align: left !important;
+    max-width: 100% !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* Grid-i tək sütuna keçiririk */
+  .hosts-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .host-card {
+    padding: 35px 25px !important;
+    background: #fff !important; /* Mobildə təmiz ağ fon daha oxunaqlıdır */
+    border: 1px solid rgba(184, 74, 26, 0.1) !important;
+  }
+
+  /* Hover effektini (xətti) mobildə hər zaman görünən edə bilərik və ya sadə saxlaya bilərik */
+  .host-card::before {
+    transform: scaleX(1) !important; /* Mobildə o rəngli xətt həmişə görünsün */
+    opacity: 0.6;
+  }
+
+  .host-avatar {
+    width: 48px !important;
+    height: 48px !important;
+    font-size: 1rem !important;
+    margin-bottom: 20px !important;
+  }
+
+  .host-quote {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+    color: var(--ink) !important;
+  }
+
+  .host-name {
+    font-size: 0.85rem !important;
+    letter-spacing: 1.5px !important;
+  }
+
+  .host-role, .host-loc {
+    font-size: 0.75rem !important;
+    line-height: 1.4;
+  }
+}
+
+/* Çox kiçik ekranlar üçün h2 ayarı */
+@media only screen and (max-width: 480px) {
+  .hosts-head h2 {
+    font-size: 1.7rem !important;
+  }
+}
