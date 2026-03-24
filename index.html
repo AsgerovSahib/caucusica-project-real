@@ -21,7 +21,7 @@
     <div class="wa-float">
       <div class="wa-label">Chat on WhatsApp</div>
       <a
-        href="https://wa.me/994554783834?text=Hi%20Caucasica.earth%20team%2C%20I%27d%20like%20to%20plan%20a%20journey%20to%20Azerbaijan."
+        href="https://wa.me/994502310121?text=Hi%20Caucasica.earth%20team%2C%20I%27d%20like%20to%20plan%20a%20journey%20to%20Azerbaijan."
         class="wa-btn"
         target="_blank"
         rel="noopener"
@@ -38,15 +38,16 @@
     <nav id="nav">
       <a href="#" class="nav-brand">CAUCASICA<span>.EARTH</span></a>
       <ul class="nav-links">
-        <li><a href="#manifesto">Our Story</a></li>
-        <li><a href="#planner">AI Planner</a></li>
-        <li><a href="#fire">The Fire</a></li>
+        <!-- <li><a href="#manifesto">Our Story</a></li> -->
+
+        <!-- <li><a href="#fire">The Fire</a></li> -->
         <li><a href="#regions">Regions</a></li>
         <li><a href="#hosts">Hosts</a></li>
-        <li><a href="#academy">Academy</a></li>
-        <li><a href="#testimonials">Reviews</a></li>
-        <li><a href="#fee-model">How It Works</a></li>
-        <li><a href="#impact">Impact</a></li>
+        <li><a href="#planner">Plan My Journey</a></li>
+        <!-- <li><a href="#academy">Academy</a></li> -->
+        <!-- <li><a href="#testimonials">Reviews</a></li> -->
+        <!-- <li><a href="#fee-model">How It Works</a></li> -->
+        <!-- <li><a href="#impact">Impact</a></li> -->
       </ul>
       <a href="#inquiry" class="nav-cta">Begin Journey</a>
     </nav>
@@ -65,11 +66,13 @@
       <div class="hero-content">
         <div class="hero-pre">Regenerative Community Tourism</div>
         <h1 class="hero-title">Caucasica</h1>
-        <p class="hero-title-sub">Azerbaijan · Land of Eternal Fire</p>
+        <p class="hero-title-sub">Born of Fire , Shaped by Time</p>
         <p class="hero-tagline">
-          <strong>Ancient land.</strong> &nbsp;·&nbsp;
-          <strong>Living culture.</strong> &nbsp;·&nbsp;
-          <strong>Regenerative journey.</strong>
+          <!-- <strong>Ancient land.</strong> &nbsp;·&nbsp;
+          <strong>Living culture.</strong> &nbsp;·&nbsp; -->
+          <strong
+            >Travel that restores praces and sustains living traditions</strong
+          >
         </p>
       </div>
       <div class="hero-scroll-hint">
@@ -145,105 +148,7 @@
       </div>
     </section>
 
-    <!-- ═══════════ AI TRIP PLANNER ═══════════ -->
-    <section id="planner">
-      <div class="planner-inner">
-        <div class="planner-header">
-          <p class="label">AI Journey Architect</p>
-          <h2>Tell Us Who You Are.<br />We'll Build Your Azerbaijan.</h2>
-          <p>
-            Write one sentence — or twenty. Describe what moves you, what you're
-            curious about, who you're travelling with. Our AI will craft a
-            personalised journey across Azerbaijan's eight regions, matched to
-            hosts who carry the stories you're looking for.
-          </p>
-        </div>
-
-        <!-- Input -->
-        <div id="plannerInputArea">
-          <div class="planner-input-wrap">
-            <textarea
-              class="planner-textarea"
-              id="plannerInput"
-              placeholder="e.g. I'm a solo traveller fascinated by ancient history and craftsmanship. I want to eat home-cooked food, meet elderly artisans, and understand how Azerbaijan's fire culture shaped the region. I have 10 days and prefer slow travel over sightseeing…"
-            ></textarea>
-          </div>
-          <div class="planner-prompts">
-            <button class="pp" onclick="setPrompt('history')">
-              🏛 Ancient History
-            </button>
-            <button class="pp" onclick="setPrompt('craft')">
-              🪡 Craft & Artisans
-            </button>
-            <button class="pp" onclick="setPrompt('food')">
-              🍽 Food & Cuisine
-            </button>
-            <button class="pp" onclick="setPrompt('nature')">
-              🏔 Mountain & Nature
-            </button>
-            <button class="pp" onclick="setPrompt('family')">
-              👨‍👩‍👧 Family Trip
-            </button>
-            <button class="pp" onclick="setPrompt('photo')">
-              📷 Photography
-            </button>
-            <button class="pp" onclick="setPrompt('silk')">
-              🛤 Full Silk Road
-            </button>
-          </div>
-          <div class="planner-actions">
-            <button class="btn-plan" id="planBtn" onclick="generatePlan()">
-              ✦ Craft My Journey
-            </button>
-            <span class="planner-hint"
-              >Powered by AI · Results in ~15 seconds · Free to generate</span
-            >
-          </div>
-        </div>
-
-        <!-- Loading -->
-        <div class="planner-loading" id="plannerLoading">
-          <div class="loading-flames">
-            <div class="lf"></div>
-            <div class="lf"></div>
-            <div class="lf"></div>
-            <div class="lf"></div>
-            <div class="lf"></div>
-          </div>
-          <div class="loading-text" id="loadingText">
-            Reading your travel soul…
-          </div>
-        </div>
-
-        <!-- Result -->
-        <div class="planner-result" id="plannerResult">
-          <div class="result-header">
-            <div class="rh-title" id="resTripTitle">Your Caucasica Journey</div>
-            <div class="rh-duration" id="resDuration">7 Days · 3 Regions</div>
-          </div>
-          <div class="result-regions" id="resRegions"><!-- JS filled --></div>
-          <div class="result-highlights" id="resHighlights">
-            <!-- JS filled -->
-          </div>
-          <div class="result-signature" id="resSignature">
-            <!-- JS filled -->
-          </div>
-          <div class="result-cta">
-            <a href="#inquiry" class="btn-send" id="resSendBtn"
-              >Send This to Our Baku Team →</a
-            >
-            <button class="btn-reset" onclick="resetPlanner()">
-              ← Plan a Different Journey
-            </button>
-            <span class="result-note"
-              >Your itinerary will be pre-filled into the inquiry form
-              below</span
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ═══════════ THREE PILLARS ═══════════ -->
+    <!--* ═══════════ THREE PILLARS ═══════════ -->
     <section id="pillars" style="padding: 0">
       <div class="pillars-header">
         <div class="pillars-header-left">
@@ -305,71 +210,7 @@
       </div>
     </section>
 
-    <!-- ═══════════ FIRE PHILOSOPHY ═══════════ -->
-    <section id="fire">
-      <div class="fire-bg"></div>
-      <div class="fire-inner">
-        <div class="fire-text">
-          <p class="label">The Fire Philosophy</p>
-          <h2>Fire Is Not<br />Destruction.<br />Fire Is <em>Life.</em></h2>
-          <div class="fire-quote">
-            <p>
-              "Azerbaijanis did not fear the fire. They worshipped it, lived
-              beside it, and named their land after it. In every hearth lit for
-              a guest, that ancient reverence lives on."
-            </p>
-            <cite>— Caucasica Host Archive, Gusar, 2024</cite>
-          </div>
-          <p class="fire-body">
-            Azerbaijan — in Persian, "Land of Fire" — is the birthplace of
-            Zoroastrianism, the world's first monotheistic religion. The eternal
-            flames of Yanar Dag have burned without fuel for millennia. The
-            Ateshgah Fire Temple drew pilgrims from across the ancient world.
-            When a host in a mountain village lights a hearth for you, they are
-            participating in a ritual that predates every major world religion.
-          </p>
-        </div>
-        <div class="fire-visual">
-          <div class="fire-symbol">🔥</div>
-          <div class="fire-facts">
-            <div class="fire-fact">
-              <div class="ff-num">4,000</div>
-              <div class="ff-label">Years of continuous flame</div>
-              <div class="ff-text">
-                Yanar Dag — the Hill That Burns — referenced by Marco Polo in
-                his 13th-century travels
-              </div>
-            </div>
-            <div class="fire-fact">
-              <div class="ff-num">7th c. BC</div>
-              <div class="ff-label">Zoroastrianism origins</div>
-              <div class="ff-text">
-                The world's first monotheism was born from these
-                fire-worshipping communities of ancient Azerbaijan
-              </div>
-            </div>
-            <div class="fire-fact">
-              <div class="ff-num">9</div>
-              <div class="ff-label">Climate zones in one country</div>
-              <div class="ff-text">
-                From alpine glaciers to Caspian coast to subtropical forest —
-                all within a day's drive
-              </div>
-            </div>
-            <div class="fire-fact">
-              <div class="ff-num">3,200+</div>
-              <div class="ff-label">Years of recorded civilisation</div>
-              <div class="ff-text">
-                Caucasian Albania — a pre-Christian state with its own alphabet
-                — flourished here centuries before most of Europe
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ═══════════ REGIONS ═══════════ -->
+    <!--& ═══════════ REGIONS ═══════════ -->
     <section id="regions">
       <div class="regions-header">
         <div>
@@ -510,7 +351,71 @@
       </div>
     </section>
 
-    <!-- ═══════════ HOST VOICES ═══════════ -->
+    <!--* ═══════════ FIRE PHILOSOPHY ═══════════ -->
+    <!-- <section id="fire">
+      <div class="fire-bg"></div>
+      <div class="fire-inner">
+        <div class="fire-text">
+          <p class="label">The Fire Philosophy</p>
+          <h2>Fire Is Not<br />Destruction.<br />Fire Is <em>Life.</em></h2>
+          <div class="fire-quote">
+            <p>
+              "Azerbaijanis did not fear the fire. They worshipped it, lived
+              beside it, and named their land after it. In every hearth lit for
+              a guest, that ancient reverence lives on."
+            </p>
+            <cite>— Caucasica Host Archive, Gusar, 2024</cite>
+          </div>
+          <p class="fire-body">
+            Azerbaijan — in Persian, "Land of Fire" — is the birthplace of
+            Zoroastrianism, the world's first monotheistic religion. The eternal
+            flames of Yanar Dag have burned without fuel for millennia. The
+            Ateshgah Fire Temple drew pilgrims from across the ancient world.
+            When a host in a mountain village lights a hearth for you, they are
+            participating in a ritual that predates every major world religion.
+          </p>
+        </div>
+        <div class="fire-visual">
+          <div class="fire-symbol">🔥</div>
+          <div class="fire-facts">
+            <div class="fire-fact">
+              <div class="ff-num">4,000</div>
+              <div class="ff-label">Years of continuous flame</div>
+              <div class="ff-text">
+                Yanar Dag — the Hill That Burns — referenced by Marco Polo in
+                his 13th-century travels
+              </div>
+            </div>
+            <div class="fire-fact">
+              <div class="ff-num">7th c. BC</div>
+              <div class="ff-label">Zoroastrianism origins</div>
+              <div class="ff-text">
+                The world's first monotheism was born from these
+                fire-worshipping communities of ancient Azerbaijan
+              </div>
+            </div>
+            <div class="fire-fact">
+              <div class="ff-num">9</div>
+              <div class="ff-label">Climate zones in one country</div>
+              <div class="ff-text">
+                From alpine glaciers to Caspian coast to subtropical forest —
+                all within a day's drive
+              </div>
+            </div>
+            <div class="fire-fact">
+              <div class="ff-num">3,200+</div>
+              <div class="ff-label">Years of recorded civilisation</div>
+              <div class="ff-text">
+                Caucasian Albania — a pre-Christian state with its own alphabet
+                — flourished here centuries before most of Europe
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!--& ═══════════ HOST VOICES ═══════════ -->
     <section id="hosts">
       <div class="hosts-head">
         <div>
@@ -571,9 +476,107 @@
         </div>
       </div>
     </section>
+    <!--&═══════════ AI TRIP PLANNER ═══════════ -->
+    <section id="planner">
+      <div class="planner-inner">
+        <div class="planner-header">
+          <p class="label">AI Journey Architect</p>
+          <h2>Tell Us Who You Are.<br />We'll Build Your Azerbaijan.</h2>
+          <p>
+            Write one sentence — or twenty. Describe what moves you, what you're
+            curious about, who you're travelling with. Our AI will craft a
+            personalised journey across Azerbaijan's eight regions, matched to
+            hosts who carry the stories you're looking for.
+          </p>
+        </div>
 
-    <!-- ═══════════ CRAFTS ═══════════ -->
-    <section id="crafts">
+        <!-- Input -->
+        <div id="plannerInputArea">
+          <div class="planner-input-wrap">
+            <textarea
+              class="planner-textarea"
+              id="plannerInput"
+              placeholder="e.g. I'm a solo traveller fascinated by ancient history and craftsmanship. I want to eat home-cooked food, meet elderly artisans, and understand how Azerbaijan's fire culture shaped the region. I have 10 days and prefer slow travel over sightseeing…"
+            ></textarea>
+          </div>
+          <div class="planner-prompts">
+            <button class="pp" onclick="setPrompt('history')">
+              🏛 Ancient History
+            </button>
+            <button class="pp" onclick="setPrompt('craft')">
+              🪡 Craft & Artisans
+            </button>
+            <button class="pp" onclick="setPrompt('food')">
+              🍽 Food & Cuisine
+            </button>
+            <button class="pp" onclick="setPrompt('nature')">
+              🏔 Mountain & Nature
+            </button>
+            <button class="pp" onclick="setPrompt('family')">
+              👨‍👩‍👧 Family Trip
+            </button>
+            <button class="pp" onclick="setPrompt('photo')">
+              📷 Photography
+            </button>
+            <button class="pp" onclick="setPrompt('silk')">
+              🛤 Full Silk Road
+            </button>
+          </div>
+          <div class="planner-actions">
+            <button class="btn-plan" id="planBtn" onclick="generatePlan()">
+              ✦ Craft My Journey
+            </button>
+            <span class="planner-hint"
+              >Powered by AI · Results in ~15 seconds · Free to generate</span
+            >
+          </div>
+        </div>
+
+        <!-- Loading -->
+        <div class="planner-loading" id="plannerLoading">
+          <div class="loading-flames">
+            <div class="lf"></div>
+            <div class="lf"></div>
+            <div class="lf"></div>
+            <div class="lf"></div>
+            <div class="lf"></div>
+          </div>
+          <div class="loading-text" id="loadingText">
+            Reading your travel soul…
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div class="planner-result" id="plannerResult">
+          <div class="result-header">
+            <div class="rh-title" id="resTripTitle">Your Caucasica Journey</div>
+            <div class="rh-duration" id="resDuration">7 Days · 3 Regions</div>
+          </div>
+          <div class="result-regions" id="resRegions"><!-- JS filled --></div>
+          <div class="result-highlights" id="resHighlights">
+            <!-- JS filled -->
+          </div>
+          <div class="result-signature" id="resSignature">
+            <!-- JS filled -->
+          </div>
+          <div class="result-cta">
+            <a href="#inquiry" class="btn-send" id="resSendBtn"
+              >Send This to Our Baku Team →</a
+            >
+            <button class="btn-reset" onclick="resetPlanner()">
+              ← Plan a Different Journey
+            </button>
+            <span class="result-note"
+              >Your itinerary will be pre-filled into the inquiry form
+              below</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--* ═══════════ CRAFTS ═══════════ -->
+    <!--^ <section id="crafts">
       <div class="crafts-top">
         <div>
           <p class="label">Craft Lineages</p>
@@ -642,10 +645,10 @@
           <span class="craft-tag">UNESCO Inscribed</span>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- ═══════════ HOST ACADEMY ═══════════ -->
-    <section id="academy">
+    <!--* ═══════════ HOST ACADEMY ═══════════ -->
+    <!--^ <section id="academy">
       <div class="academy-grid">
         <div class="academy-left">
           <p class="label">Host Academy</p>
@@ -702,10 +705,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- ═══════════ TECH DIPLOMACY ═══════════ -->
-    <section id="tech-diplomacy">
+    <!--* ═══════════ TECH DIPLOMACY ═══════════ -->
+    <!--^ <section id="tech-diplomacy">
       <div class="td-inner">
         <div class="td-top">
           <div>
@@ -767,10 +770,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- ═══════════ FEE MODEL ═══════════ -->
-    <section id="fee-model">
+    <!--* ═══════════ FEE MODEL ═══════════ -->
+    <!--^ <section id="fee-model">
       <div class="fee-inner">
         <div class="fee-top">
           <div>
@@ -844,10 +847,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- ═══════════ SCALING ROADMAP ═══════════ -->
-    <section id="scaling">
+    <!--* ═══════════ SCALING ROADMAP ═══════════ -->
+    <!--^ <section id="scaling">
       <div class="scaling-inner">
         <div class="scaling-top">
           <div>
@@ -936,10 +939,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- ═══════════ CBT-AI TOOLKIT ═══════════ -->
-    <section id="toolkit">
+    <!--* ═══════════ CBT-AI TOOLKIT ═══════════ -->
+    <!-- <section id="toolkit">
       <div class="toolkit-inner">
         <div class="toolkit-left">
           <p class="label">Free Resource</p>
@@ -1015,10 +1018,10 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- ═══════════ IMPACT ═══════════ -->
-    <section id="impact">
+    <!--* ═══════════ IMPACT ═══════════ -->
+    <!-- <section id="impact">
       <div class="impact-inner">
         <div class="impact-left">
           <p class="label">Regenerative Promise</p>
@@ -1103,10 +1106,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- ═══════════ TESTIMONIALS ═══════════ -->
-    <section id="testimonials">
+    <!--* ═══════════ TESTIMONIALS ═══════════ -->
+    <!-- <section id="testimonials">
       <div
         style="
           max-width: 1200px;
@@ -1124,7 +1127,6 @@
           </p>
         </div>
 
-        <!-- Featured testimonial -->
         <div class="test-featured" style="margin-bottom: 2px">
           <div class="tf-quote">
             "I have travelled to 47 countries. Azerbaijan is the only place
@@ -1290,7 +1292,6 @@
           </div>
         </div>
 
-        <!-- Trust bar -->
         <div class="trust-bar">
           <div class="trust-item">
             <div class="trust-num">4.97</div>
@@ -1320,9 +1321,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- ═══════════ INQUIRY ═══════════ -->
+    <!--* ═══════════ INQUIRY ═══════════ -->
     <section id="inquiry">
       <div class="inquiry-grid">
         <div class="inq-left">
@@ -1394,11 +1395,11 @@
       </div>
     </section>
 
-    <!-- ═══════════ FOOTER ═══════════ -->
+    <!--* ═══════════ FOOTER ═══════════ -->
     <footer>
       <div class="footer-top">
         <div>
-          <div class="footer-brand">CAUCASICA<span>.earth</span></div>
+          <div class="footer-brand">CAUCASICA<span>.EARTH</span></div>
           <p class="footer-tagline">
             "The world's oldest living crossroads — told for the first time by
             the people who actually live there."
@@ -1418,14 +1419,14 @@
           <a href="#fire">The Fire Philosophy</a>
           <a href="#">Festival Calendar</a>
         </div>
-        <div class="footer-col">
+        <!-- <div class="footer-col">
           <h4>Platform</h4>
           <a href="#academy">Host Academy</a>
           <a href="#fee-model">How It Works</a>
           <a href="#tech-diplomacy">Tech Diplomacy Tours</a>
           <a href="#toolkit">Free CBT-AI Guide</a>
           <a href="#scaling">Expansion Roadmap</a>
-        </div>
+        </div> -->
         <div class="footer-col">
           <h4>About</h4>
           <a href="#">Our Story</a>
