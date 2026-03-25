@@ -55,7 +55,7 @@
 .planner-header p {
   font-family: "EB Garamond", serif;
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.4);
   line-height: 1.7;
 }
@@ -429,4 +429,74 @@
   color: rgba(255, 255, 255, 0.2);
   font-family: "Mulish", sans-serif;
   font-style: italic;
+}
+
+/* SINGLE TESTIMONIAL */
+#testimonial {
+  background: var(--ink);
+  padding: 80px 56px;
+}
+.testi-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.testi-featured {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 60px;
+  align-items: center;
+  padding: 52px 56px;
+  border: 1px solid rgba(200, 150, 42, 0.15);
+  background: rgba(255, 255, 255, 0.03);
+}
+.tf-quote {
+  font-family: "EB Garamond", serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.72;
+}
+.tf-quote em {
+  color: var(--gold-lt);
+  font-style: normal;
+}
+.tf-person {
+  text-align: right;
+  flex-shrink: 0;
+  min-width: 160px;
+}
+.tf-name {
+  font-family: "Cinzel", serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.tf-origin {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.35);
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 8px;
+}
+.tf-stars {
+  display: flex;
+  gap: 3px;
+  justify-content: flex-end;
+  margin-bottom: 7px;
+}
+.star {
+  color: var(--gold);
+  font-size: 0.85rem;
+}
+.tf-region {
+  display: inline-block;
+  font-size: 0.6rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: rgba(200, 150, 42, 0.12);
+  border: 1px solid rgba(200, 150, 42, 0.22);
+  color: var(--gold-lt);
+  padding: 3px 10px;
+  font-family: "Mulish", sans-serif;
 }
