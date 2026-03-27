@@ -11,6 +11,21 @@
     <link rel="stylesheet" href="./ai.css" />
     <link rel="stylesheet" href="./regions.css" />
     <link rel="stylesheet" href="./mobile.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Mulish:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("1q_E3r5DSQN_guMa5"); // Bura öz Public Key-ini yaz
+      })();
+    </script>
   </head>
   <body>
     <!-- ═══════════ cursor ═══════════ -->
@@ -215,7 +230,10 @@
       <div class="regions-header">
         <div>
           <p class="label">Eight Regions</p>
-          <h2>One Civilisation,<br />Eight Doors</h2>
+          <h2>
+            Where do you <br />
+            feel drawn?
+          </h2>
         </div>
         <p
           style="
@@ -228,7 +246,8 @@
             line-height: 1.7;
           "
         >
-          Drag to explore. Each region is a world entire unto itself.
+          Each region is a different Azerbaijan. Drag to explore — let one
+          choose you.
         </p>
       </div>
       <div class="regions-scroll" id="regScroll">
@@ -433,8 +452,8 @@
             line-height: 1.7;
           "
         >
-          Every host profile is built around one question: what ancient
-          tradition lives in your family?
+          Every host answers one question: what ancient tradition lives in your
+          family?
         </p>
       </div>
       <div class="hosts-grid">
@@ -1370,98 +1389,92 @@
             <div class="inq-p">WhatsApp support throughout your journey</div>
           </div>
         </div>
-        <div class="inq-form">
-          <div class="form-row-2">
-            <div>
-              <label>First Name</label>
-              <input type="text" placeholder="Your name" />
-            </div>
-            <div>
-              <label>Last Name</label>
-              <input type="text" placeholder="Family name" />
-            </div>
-          </div>
-          <label>Email</label>
-          <input type="email" placeholder="you@example.com" />
-          <div class="form-row-2">
-            <div>
-              <label>Travel Window</label>
-              <input type="text" placeholder="e.g. September 2026" />
-            </div>
-            <div>
-              <label>Travelling as</label>
-              <select>
-                <option>Solo explorer</option>
-                <option>Two people</option>
-                <option>Small group (3–6)</option>
-                <option>Family with children</option>
-              </select>
-            </div>
-          </div>
-          <label>Regions of interest</label>
-          <select>
-            <option>Full Caucasica Grand Tour (8 regions)</option>
-            <option>Fire & Ancient History (Baku + surroundings)</option>
-            <option>Silk Road North (Shaki, Gusar)</option>
-            <option>Western Heritage (Ganja, Gazakh)</option>
-            <option>Subtropical South (Lenkaran)</option>
-            <option>Karabakh Renaissance (Khankendi)</option>
-            <option>Noah's Exclave (Nakhchivan)</option>
+        <!-- Formun içindəki elementləri belə yenilə -->
+        <div class="inq-form" id="contact-form">
+          <input
+            type="text"
+            name="first_name"
+            placeholder="Your name"
+            required
+          />
+          <input
+            type="text"
+            name="last_name"
+            placeholder="Family name"
+            required
+          />
+          <input
+            type="email"
+            name="user_email"
+            placeholder="you@example.com"
+            required
+          />
+          <input
+            type="text"
+            name="travel_window"
+            placeholder="e.g. September 2026"
+          />
+
+          <select name="travelling_as">
+            <option>Solo explorer</option>
+            <option>Two people</option>
           </select>
-          <label>What moves you to travel?</label>
+
+          <select name="region">
+            <option>Full Caucasica Grand Tour</option>
+          </select>
+
           <textarea
-            placeholder="History, craft, food, nature, community, photography, spiritual, all of it…"
+            name="message"
+            placeholder="What moves you to travel?"
           ></textarea>
-          <button class="btn-submit">Send My Inquiry — Let's Begin</button>
+
+          <button type="button" class="btn-submit" id="submit-btn">
+            Send My Inquiry — Let's Begin
+          </button>
         </div>
       </div>
     </section>
 
     <!--* ═══════════ FOOTER ═══════════ -->
-    <footer>
+      <footer>
       <div class="footer-top">
         <div>
-          <div class="footer-brand">CAUCASICA<span>.EARTH</span></div>
+          <div class="footer-brand">CAUCASICA<span>.earth</span></div>
           <p class="footer-tagline">
             "The world's oldest living crossroads — told for the first time by
             the people who actually live there."
           </p>
           <div class="footer-social">
-            <a href="#" class="fsoc">in</a>
-            <a href="#" class="fsoc">ig</a>
-            <a href="#" class="fsoc">fb</a>
-            <a href="#" class="fsoc">wa</a>
+            <a href="#" class="fsoc" aria-label="Instagram">ig</a>
+            <a href="#" class="fsoc" aria-label="YouTube">yt</a>
+            <a href="#" class="fsoc" aria-label="Facebook">fb</a>
+            <a
+              href="https://wa.me/994XXXXXXXXX"
+              class="fsoc"
+              aria-label="WhatsApp"
+              >wa</a
+            >
           </div>
         </div>
         <div class="footer-col">
           <h4>Explore</h4>
           <a href="#regions">Eight Regions</a>
           <a href="#hosts">Host Voices</a>
-          <a href="#crafts">Craft Lineages</a>
-          <a href="#fire">The Fire Philosophy</a>
+          <a href="#planner">Plan My Journey</a>
           <a href="#">Festival Calendar</a>
+          <a href="#">National Music</a>
         </div>
-        <!-- <div class="footer-col">
-          <h4>Platform</h4>
-          <a href="#academy">Host Academy</a>
-          <a href="#fee-model">How It Works</a>
-          <a href="#tech-diplomacy">Tech Diplomacy Tours</a>
-          <a href="#toolkit">Free CBT-AI Guide</a>
-          <a href="#scaling">Expansion Roadmap</a>
-        </div> -->
         <div class="footer-col">
           <h4>About</h4>
           <a href="#">Our Story</a>
-          <a href="#">Regenerative Mission</a>
-          <a href="#">Community Partners</a>
+          <a href="#">For Hosts</a>
           <a href="#">Press & Media</a>
           <a href="#inquiry">Contact Baku Team</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="footer-copy">
-          © 2026 Caucasica.earth · Baku, Azerbaijan · All rights reserved
-        </div>
+        <div class="footer-copy">© 2026 Caucasica.earth · Baku, Azerbaijan</div>
         <div class="footer-earth">CAUCASICA · EARTH</div>
       </div>
     </footer>
@@ -1469,4 +1482,5 @@
   <script src="basic.js"></script>
   <script src="ai.js"></script>
   <script src="regions.js"></script>
+  <script src="inquiry.js"></script>
 </html>
