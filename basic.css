@@ -2,36 +2,43 @@
    TOKENS
 ═══════════════════════════════════════ */
 :root {
-  --ember:    #B84A1A;
-  --fire:     #D4601E;
-  --gold:     #C8962A;
-  --gold-lt:  #E8BC5A;
-  --parch:    #F2E8D5;
-  --warm:     #EAD9BC;
-  --ink:      #1C1410;
-  --deep:     #2A1E14;
-  --forest:   #1E3028;
-  --stone:    #6A5A48;
-  --mist:     #8A7A68;
-  --chalk:    #FAF5EC;
+  --ember: #b84a1a;
+  --fire: #d4601e;
+  --gold: #c8962a;
+  --gold-lt: #e8bc5a;
+  --parch: #f2e8d5;
+  --warm: #ead9bc;
+  --ink: #1c1410;
+  --deep: #2a1e14;
+  --forest: #1e3028;
+  --stone: #6a5a48;
+  --mist: #8a7a68;
+  --chalk: #faf5ec;
 }
 /* ═══════════════════════════════════════
    RESET & BASE
 ═══════════════════════════════════════ */
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;font-size:16px}
-body{
-  font-family:'Mulish',sans-serif;
-  background:var(--chalk);
-  color:var(--ink);
-  overflow-x:hidden;
-  cursor:none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+body {
+  font-family: "Mulish", sans-serif;
+  background: var(--chalk);
+  color: var(--ink);
+  overflow-x: hidden;
+  /* cursor: none; */
 }
 
 /* ═══════════════════════════════════════
    CUSTOM CURSOR
 ═══════════════════════════════════════ */
-.cursor{
+/* .cursor{
   position:fixed;width:10px;height:10px;
   background:var(--ember);border-radius:50%;
   pointer-events:none;z-index:9999;
@@ -47,42 +54,136 @@ body{
   transition:transform .12s ease,width .3s,height .3s;
 }
 body:hover .cursor{opacity:1}
-
+ */
 
 /* ═══════════════════════════════════════
    UTILS
 ═══════════════════════════════════════ */
-.label-block{
-  font-size:.66rem;letter-spacing:4px;text-transform:uppercase;
-  margin-bottom:12px;font-family:'Mulish',sans-serif;
+.label-block {
+  font-size: 0.66rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-family: "Mulish", sans-serif;
 }
 
-@media(max-width:1024px){
-  nav{padding:18px 28px}
-  nav.scrolled{padding:12px 28px}
-  .nav-links{display:none}
-  section,#manifesto,#hosts,#crafts,#impact,#inquiry,#academy,#tech-diplomacy,#fee-model,#scaling,#toolkit,#planner,#testimonials,footer{padding-left:28px;padding-right:28px}
-  .pillar{padding:40px 28px}
-  .promo-grid,.fire-inner,.pillars-grid{grid-template-columns:1fr}
-  .hosts-grid,.crafts-grid{grid-template-columns:1fr 1fr}
-  .impact-inner,.inquiry-grid,.academy-grid,.toolkit-inner{grid-template-columns:1fr;gap:50px}
-  .footer-top{grid-template-columns:1fr 1fr;gap:40px}
-  .regions-header,.hosts-head,.crafts-top{flex-direction:column;gap:16px;padding-left:28px;padding-right:28px}
-  .regions-scroll{padding:0 28px}
-  .pillars-header,.td-top,.fee-top,.scaling-top{flex-direction:column;gap:20px;padding:50px 28px 40px}
-  .td-cards{grid-template-columns:1fr}
-  .fee-layout{grid-template-columns:1fr}
-  .fee-hero{flex-direction:column;gap:24px}
-  .fee-breakdown{grid-template-columns:1fr}
-  .td-banner{flex-direction:column;gap:24px;text-align:center}
-  .weeks-grid{grid-template-columns:1fr}
-  .test-grid{grid-template-columns:1fr 1fr}
-  .test-featured{grid-template-columns:1fr;gap:28px}
-  .tf-person{text-align:left}
-  .tf-stars{justify-content:flex-start}
-  .trust-bar{gap:24px}
-  .trust-sep{display:none}
-  .result-highlights{grid-template-columns:1fr}
-  .rr-card{grid-template-columns:1fr;gap:8px}
-  .rr-meal{text-align:left}
+@media (max-width: 1024px) {
+  nav {
+    padding: 18px 28px;
+  }
+  nav.scrolled {
+    padding: 12px 28px;
+  }
+  .nav-links {
+    display: none;
+  }
+  section,
+  #manifesto,
+  #hosts,
+  #crafts,
+  #impact,
+  #inquiry,
+  #academy,
+  #tech-diplomacy,
+  #fee-model,
+  #scaling,
+  #toolkit,
+  #planner,
+  #testimonials,
+  footer {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .pillar {
+    padding: 40px 28px;
+  }
+  .promo-grid,
+  .fire-inner,
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  .hosts-grid,
+  .crafts-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .impact-inner,
+  .inquiry-grid,
+  .academy-grid,
+  .toolkit-inner {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .regions-header,
+  .hosts-head,
+  .crafts-top {
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .regions-scroll {
+    padding: 0 28px;
+  }
+  .pillars-header,
+  .td-top,
+  .fee-top,
+  .scaling-top {
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 28px 40px;
+  }
+  .td-cards {
+    grid-template-columns: 1fr;
+  }
+  .fee-layout {
+    grid-template-columns: 1fr;
+  }
+  .fee-hero {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .fee-breakdown {
+    grid-template-columns: 1fr;
+  }
+  .td-banner {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+  .weeks-grid {
+    grid-template-columns: 1fr;
+  }
+  .test-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .test-featured {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .tf-person {
+    text-align: left;
+  }
+  .tf-stars {
+    justify-content: flex-start;
+  }
+  .trust-bar {
+    gap: 24px;
+  }
+  .trust-sep {
+    display: none;
+  }
+  .result-highlights {
+    grid-template-columns: 1fr;
+  }
+  .rr-card {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .rr-meal {
+    text-align: left;
+  }
 }

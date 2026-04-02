@@ -21,22 +21,23 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
+
     <script type="text/javascript">
       (function () {
-        emailjs.init("1q_E3r5DSQN_guMa5"); // Bura öz Public Key-ini yaz
+        emailjs.init("PQ8UZakcvg1IDOObn"); // Bura öz Public Key-ini yaz
       })();
     </script>
   </head>
   <body>
     <!-- ═══════════ cursor ═══════════ -->
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-ring" id="cursorRing"></div>
+    <!-- <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div> -->
 
     <!-- ═══════════ WHATSAPP FLOAT ═══════════ -->
     <div class="wa-float">
       <div class="wa-label">Chat on WhatsApp</div>
       <a
-        href="https://wa.me/994502310121?text=Hi%20Caucasica.earth%20team%2C%20I%27d%20like%20to%20plan%20a%20journey%20to%20Azerbaijan."
+        href="https://wa.me/994104288434?text=Hi%20Caucasica.earth%20team%2C%20I%27d%20like%20to%20plan%20a%20journey%20to%20Azerbaijan."
         class="wa-btn"
         target="_blank"
         rel="noopener"
@@ -51,7 +52,7 @@
     </div>
     <!-- ═══════════ NAV ═══════════ -->
     <nav id="nav">
-      <a href="#" class="nav-brand">CAUCASICA<span>.EARTH</span></a>
+      <a href="#" class="nav-brand">CAUCASICA<span>.earth</span></a>
       <ul class="nav-links">
         <!-- <li><a href="#manifesto">Our Story</a></li> -->
 
@@ -86,7 +87,7 @@
           <!-- <strong>Ancient land.</strong> &nbsp;·&nbsp;
           <strong>Living culture.</strong> &nbsp;·&nbsp; -->
           <strong
-            >Travel that restores praces and sustains living traditions</strong
+            >Travel that restores places and sustains living traditions</strong
           >
         </p>
       </div>
@@ -503,6 +504,7 @@
           <h2>Tell Us Who You Are.<br />We'll Build Your Azerbaijan.</h2>
           <p>
             Write one sentence or twenty. Our team will craft a personalised
+            <br />
             journey matched to hosts who carry the stories you're looking for.
           </p>
         </div>
@@ -543,9 +545,7 @@
             <button class="btn-plan" id="planBtn" onclick="generatePlan()">
               ✦ Craft My Journey
             </button>
-            <span class="planner-hint"
-              >Powered by AI · Results in ~15 seconds · Free to generate</span
-            >
+            <span class="planner-hint">~15 seconds </span>
           </div>
         </div>
 
@@ -1371,63 +1371,95 @@
     <section id="inquiry">
       <div class="inquiry-grid">
         <div class="inq-left">
-          <p class="label">Begin Your Journey</p>
-          <h2>Come as a Traveller.<br />Leave as a Witness.</h2>
+          <p class="label">get in touch</p>
+          <h2>Travellers, hosts<br />and partners</h2>
           <div class="rule"></div>
           <p>
-            Our Baku-based team designs every itinerary personally — no
-            templates, no packages, no shortcuts. Tell us who you are and what
-            moves you, and we will build you a journey that couldn't exist
-            anywhere else on earth.
+            Our team is based in Baku and responds within 24 hours.<br />
+            WhatsApp is fastest for travel questions.
           </p>
-          <div class="inq-promises">
-            <div class="inq-p">Personal response within 24 hours from Baku</div>
-            <div class="inq-p">
-              Custom itinerary built around your interests
-            </div>
-            <div class="inq-p">All hosts personally vetted by our team</div>
-            <div class="inq-p">WhatsApp support throughout your journey</div>
+
+          <div class="inq-ways">
+            <a
+              href="https://wa.me/994104288434"
+              class="inq-way-card"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="way-icon">💬</span>
+              <div>
+                <div class="way-lbl">WhatsApp</div>
+                <div class="way-val">Fastest — under 8 hours</div>
+              </div>
+            </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@caucasica.earth"
+              class="inq-way-card"
+              target="_blank"
+            >
+              <span class="way-icon">✉️</span>
+              <div>
+                <div class="way-lbl">Email</div>
+                <div class="way-val">hello@caucasica.earth</div>
+              </div>
+            </a>
+            <a
+              href="https://instagram.com/caucasica.earth/"
+              target="_blank"
+              rel="noopener"
+              class="inq-way-card"
+            >
+              <span class="way-icon">📷</span>
+              <div>
+                <div class="way-lbl">Instagram</div>
+                <div class="way-val">@caucasica.earth</div>
+              </div>
+            </a>
           </div>
         </div>
-        <!-- Formun içindəki elementləri belə yenilə -->
-        <div class="inq-form" id="contact-form">
-          <input
-            type="text"
-            name="first_name"
-            placeholder="Your name"
-            required
-          />
-          <input
-            type="text"
-            name="last_name"
-            placeholder="Family name"
-            required
-          />
-          <input
-            type="email"
-            name="user_email"
-            placeholder="you@example.com"
-            required
-          />
-          <input
-            type="text"
-            name="travel_window"
-            placeholder="e.g. September 2026"
-          />
 
-          <select name="travelling_as">
-            <option>Solo explorer</option>
-            <option>Two people</option>
-          </select>
+        <div class="inq-form-box" id="contact-form">
+          <h3>Send a message</h3>
 
-          <select name="region">
-            <option>Full Caucasica Grand Tour</option>
-          </select>
+          <div class="form-row-2">
+            <div class="field-group">
+              <label>Name</label>
+              <input
+                type="text"
+                name="first_name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="field-group">
+              <label>Email</label>
+              <input
+                type="email"
+                name="user_email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+          </div>
 
-          <textarea
-            name="message"
-            placeholder="What moves you to travel?"
-          ></textarea>
+          <div class="field-group">
+            <label>I am a…</label>
+            <select name="travelling_as">
+              <option>Traveller planning a visit</option>
+              <option>Prospective host or guide</option>
+              <option>Journalist or researcher</option>
+              <option>Potential partner</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label>Message</label>
+            <textarea
+              name="message"
+              placeholder="Tell us what you're looking for…"
+            ></textarea>
+          </div>
 
           <button type="button" class="btn-submit" id="submit-btn">
             Send My Inquiry — Let's Begin
@@ -1437,7 +1469,7 @@
     </section>
 
     <!--* ═══════════ FOOTER ═══════════ -->
-      <footer>
+    <footer>
       <div class="footer-top">
         <div>
           <div class="footer-brand">CAUCASICA<span>.earth</span></div>
